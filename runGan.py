@@ -277,8 +277,8 @@ elif( runcase == 4 ): # Train FRVSR, loss = l2 warp + l2 content
         "--input_video_dir", TrainingDataPath, 
         "--input_video_pre", "scene",
         "--str_dir", "2000",
-        "--end_dir", "2250",
-        "--end_dir_val", "2290",
+        "--end_dir", "2160",
+        "--end_dir_val", "2197",
         "--max_frm", "119",
         # -- cpu memory for data loading --
         "--queue_thread", "12",# Cpu threads for the data. >4 to speedup the training
