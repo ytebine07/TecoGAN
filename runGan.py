@@ -138,7 +138,8 @@ elif( runcase == 3 ): # Train TecoGAN
     '''Prepare Training Folder'''
     # path appendix, manually define it, or use the current datetime, now_str = "mm-dd-hh"
     now_str = datetime.datetime.now().strftime("%m-%d-%H")
-    train_dir = folder_check("ex_TecoGAN%s/"%now_str)
+    # train_dir = folder_check("ex_TecoGAN%s/"%now_str)
+    train_dir = folder_check("/content/drive/My Drive/TecoGanData/" + "ex_TecoGAN%s/"%now_str)
     # train TecoGAN, loss = l2 + VGG54 loss + A spatio-temporal Discriminator
     cmd1 = ["python3", "main.py",
         "--cudaID", "0", # set the cudaID here to use only one GPU
